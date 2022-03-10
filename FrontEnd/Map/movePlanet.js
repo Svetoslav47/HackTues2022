@@ -1,3 +1,5 @@
+sun = document.getElementById("sun");
+
 var sat = {
     elt: null,
     a: 0 // in radian
