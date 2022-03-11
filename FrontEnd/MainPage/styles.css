@@ -37,6 +37,8 @@ body{
     font-size: 10em;
     margin-bottom: 10%;
     margin-top: 5%;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
 }
 p{
     display: flex;
@@ -45,4 +47,32 @@ p{
     padding-left: 20%;
     padding-right: 20%;
     font-size: 1.5em;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20%;
+}
+#footerP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+#footerImg{
+    width: 10%;
+    height: 10%;
+}
+h3{
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Bebas Neue', cursive; 
+    padding-left: 40%;
+    padding-right: 40%;
+    margin-bottom: 5%;
+}
+#footer{
+    background-color: #1F1F35;
 }
