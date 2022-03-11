@@ -23,11 +23,13 @@
 .solarDescription {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     height: 100%;
     width: 80%;
     margin: 0px 5%;
     transition: all 0.5s;
+    color:white;
+    line-height: 1.2em;
 }
 
 .solarContainer:nth-of-type(2n) {
@@ -51,9 +53,7 @@ header h1 {
 body{
     background-image: url(../Images/GalaxyMapBackground.png);
 }
-body div div{
-    color:white;
-}
+
 h1{
     color:white;
 }
