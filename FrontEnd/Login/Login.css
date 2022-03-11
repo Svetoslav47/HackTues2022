@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    background-image: url(../Images/loginBackground.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+}
+#img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15em;
+}
+
+#login {
+    margin: 10px;
+    background-color: #1F1F35;
+    opacity: 80%;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 20px;
+}
+#loginbutton {
+    margin: 10px;
+    background-color: #1F1F35;
+    opacity: 80%;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#SignUp{
+    text-align: center;
+    margin: 10px;
+    background-color: #1F1F35;
+    opacity: 80%;
+    border: none;
+}

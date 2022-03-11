@@ -7,17 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to</title>
     <link rel="stylesheet" href="../cssReset.css">
+    <link rel="stylesheet" href="Login.css">
 </head>
 
 <body>
-    <p>Login</p>
+
+    <img id="img" src="..\Images\profilePicLoginAndSignUp.png" alt="">
+
     <form action="/" method="POST">
-        <input type="text" name="" id="" placeholder="username">
-        <input type="password" name="" id="" placeholder="password">
-        <input type="submit" value="Login">
+
+       
+      <input type="text" id="login" placeholder="username">
+      <input type="password" id="login" placeholder="password">
+      <input type="submit" id="loginbutton" value="Login">
+    
+
     </form>
-    <button>SignUp</button>
-    <a href="/signup.html"></a>
+
+    <form action="../SignUp/SignUp.html">
+        <div>
+            <button id="SignUp">Don’t have an account? Create!</button>
+        </div>
+    </form>
+
+
 </body>
 
 </html>
