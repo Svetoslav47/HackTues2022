@@ -1,19 +1,23 @@
-sun = document.getElementById("sun");
+let orbit = document.getElementById("orbit");
+let satelite = document.getElementById("sat1");
 
 var sat = {
     elt: null,
     a: 0 // in radian
         ,
-    r: 100 // radius
+    r: parseInt(window.getComputedStyle(orbit).width) / 2 // radius
         ,
-    da: -0.1 // in radian
+    da: -0.01 // in radian
         ,
     x: 0,
     y: 0
         // Center is actualy center (100, 100) minus
         // half the size of the orbiting object 15x15
         ,
-    center: { x: (100 - 15), y: (100 - 15) }
+    center: {
+        x: (parseInt(window.getComputedStyle(orbit).width) / 2 - parseInt(window.getComputedStyle(satelite).width) / 2),
+        y: (parseInt(window.getComputedStyle(orbit).height) / 2 - parseInt(window.getComputedStyle(satelite).height) / 2)
+    }
 }
 sat.move = function() {
     // each modification
