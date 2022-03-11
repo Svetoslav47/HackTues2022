@@ -44,3 +44,16 @@ header h1 {
     opacity: 50%;
     padding-top: 0.5em;
 }
+
+
+
+
+body{
+    background-image: url(../Images/GalaxyMapBackground.png);
+}
+body div div{
+    color:white;
+}
+h1{
+    color:white;
+}
