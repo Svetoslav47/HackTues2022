@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../Images/BackGroundMars.jpg);
+    background-image: url(../../Images/BackGroundNeptun.png);
 }
 
 #zaglavie{
@@ -84,7 +84,7 @@ body{
 #buton button{
     text-transform: uppercase;
     background-color: white;
-    color: #D3504A;
+    color: #32316C;
     padding: 0.8em 1.8em;
     font-size: 1.5em;
     margin-bottom: 2em;
@@ -105,24 +105,23 @@ body{
 #butonnazad button{
     text-transform: uppercase;
     background-color: white;
-    color: #000000;
+    color: #32316C;
     padding: 0.4em 1.5em;
     font-size: 1em;
     margin-bottom: 2em;
     font-weight: bold;
     border: none;
-    border-radius: 50px;
-}
-
-#buton button:hover{
-        background-color: rgba(167, 73, 73, 0.959);
-        transition: background-color 0.5s;
-        color: white;
-        transition: color 1; 
+    border-radius: 20px;
 }
 #butonnazad button:hover{
-    background-color: rgba(167, 73, 73, 0.959);
+    background-color: rgb(58, 56, 116);
     transition: background-color 0.5s;
     color: white;
-    transition: color 1; 
+    transition: color 1;
+}
+#buton button:hover{
+    background-color: rgb(58, 56, 116);
+    transition: background-color 0.5s;
+    color: white;
+    transition: color 1;
 }
