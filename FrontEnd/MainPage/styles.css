@@ -50,8 +50,9 @@ body {
     background-image: url(../Images/mainPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #1F1F35;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 #title {
@@ -59,59 +60,75 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 15em;
-    margin: 3% 7%;
-    margin-top: 10%;
+    font-size: 12em;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 1%;
     color: white;
 }
 
+#titleContainer {
+    margin-left: 7%;
+}
+
+#choseAnOption {
+    color: white;
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0px;
+}
+
 p {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3% 20%;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     margin-bottom: 5%;
+    line-height: 1.2em;
 }
 
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-section div {
+.card {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
+    margin-bottom: 1%;
 }
 
-section img {
+.card img {
     width: 20%;
     height: 20%;
     display: block;
 }
 
-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 10%;
+.card h3 {
+    font-size: 2em;
+    margin-bottom: 5%;
     margin-top: 5%;
     color: white;
     text-align: center;
 }
 
-section p {
-    font-size: medium;
+.card p {
+    font-size: 1.5em;
     background: none;
-    width: 15em;
-    height: 2em;
+    width: 70%;
+    min-height: 6em;
     text-align: center;
 }
 
-section button {
+.card button {
     font-size: large;
     background: none;
     margin-left: 5px;
@@ -126,10 +143,9 @@ section button {
     border-radius: 20px;
 }
 
-section a {
+.card a {
     font-size: large;
     background: none;
-    margin-top: 5%;
     border: none;
     color: white;
     width: 26em;
@@ -141,7 +157,7 @@ section a {
     align-items: center;
 }
 
-section a:hover {
+.card a:hover {
     transition: background-color 0.5s;
     background-color: #2c2c49;
 }
