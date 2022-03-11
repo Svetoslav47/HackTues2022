@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../Images/BackGroundKepler-442b.png);
+    background-image: url(../../Images/BackGroundNeptun.png);
 }
 
 #zaglavie{
@@ -81,17 +81,16 @@ body{
     align-items: center;
 }
 
-#buton a{
+#buton button{
     text-transform: uppercase;
     background-color: white;
-    color: #D3504A;
+    color: #32316C;
     padding: 0.8em 1.8em;
     font-size: 1.5em;
     margin-bottom: 2em;
     font-weight: bold;
     border: none;
     border-radius: 50px;
-    text-decoration: none;
 }
 
 .srednozaglavie{
@@ -103,48 +102,26 @@ body{
     margin-top: 1em;
 }
 
-#buton button:hover{
-    background-color: rgba(167, 73, 73, 0.959);
-    transition: background-color 0.5s;
-    color: white;
-    transition: color 1;
-}
-
-#butonnazad a{
+#butonnazad button{
     text-transform: uppercase;
     background-color: white;
-    color: #000000;
+    color: #32316C;
     padding: 0.4em 1.5em;
     font-size: 1em;
     margin-bottom: 2em;
     font-weight: bold;
     border: none;
-    border-radius: 50px;
-    text-decoration: none;
+    border-radius: 20px;
 }
-
-#buton a:hover{
-        background-color: rgba(93,24,17,0.959);
-        transition: background-color 0.5s;
-        color: white;
-        transition: color 1; 
-}
-#butonnazad a:hover{
-    background-color: rgba(93,24,17,0.959);
+#butonnazad button:hover{
+    background-color: rgb(58, 56, 116);
     transition: background-color 0.5s;
     color: white;
-    transition: color 1; 
+    transition: color 1;
 }
-
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background-color: #5D1811;     /* color of the tracking area */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #411811;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 0px solid #2d4053;  /* creates padding around scroll thumb */
-  }
+#buton button:hover{
+    background-color: rgb(58, 56, 116);
+    transition: background-color 0.5s;
+    color: white;
+    transition: color 1;
 }

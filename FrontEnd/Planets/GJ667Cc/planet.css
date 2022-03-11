@@ -94,18 +94,6 @@ body{
     text-decoration: none;
 }
 
-#buton button{
-    text-transform: uppercase;
-    background-color: white;
-    color: #D3504A;
-    padding: 0.8em 1.8em;
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-}
-
 .srednozaglavie{
     font-size: 2em;
 }
@@ -129,17 +117,6 @@ body{
 }
 
 
-#butonnazad button{
-    text-transform: uppercase;
-    background-color: white;
-    color: #000000;
-    padding: 0.4em 1.5em;
-    font-size: 1em;
-    margin-bottom: 2em;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 20px;
-}
 #buton a:hover{
         background-color: rgba(167, 73, 73, 0.959);
         transition: background-color 0.5s;
@@ -152,11 +129,6 @@ body{
     color: white;
     transition: color 1; 
 }
-#buton button:hover{
-    background-color: rgba(167, 73, 73, 0.959);
-    transition: background-color 0.5s;
-    color: white;
-    transition: color 1;
 }
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
@@ -169,3 +141,4 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #2d4053;  /* creates padding around scroll thumb */
   }
+}
