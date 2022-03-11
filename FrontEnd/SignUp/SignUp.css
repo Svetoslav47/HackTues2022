@@ -3,13 +3,19 @@ body {
     background-image: url(/Images/loginBackground.jpg);
     display: flex;
     background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #loginform {
-    margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .signup {
@@ -20,12 +26,11 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
     width: 500px;
     height: 60px;
-    font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     border-radius: 10px;
 }
@@ -36,12 +41,10 @@ body {
     opacity: 80%;
     border: none;
     color: white;
-    display: flex;
-    font-family: 'Bebas Neue', cursive;
+    margin-top: 1em;display: flex;
     flex-direction: column;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     align-items: center;
@@ -55,12 +58,12 @@ body {
     margin: 20px;
     background-color: none;
     opacity: 80%;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     display: block;
     text-decoration: none;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
+    color: white;f
     border-radius: 10px;
 }
