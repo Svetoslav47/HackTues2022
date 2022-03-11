@@ -1,0 +1,68 @@
+body{
+    margin: 0%;
+    background-image: url(/Images/loginBackground.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+#loginform{
+    margin-top:5em;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+.signup {
+    margin: 10px;
+    background-color: #1F1F35;
+    opacity: 80%;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top:1em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 500px;
+    height: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size:30px;
+    border-radius: 10px;
+}
+
+#signupbutton {
+    margin: 10px;
+    background-color: #1F1F35;
+    opacity: 80%;
+    border: none;
+    color: white;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+#login{
+    text-align: center;
+    margin: 20px;
+    background-color: none;
+    opacity: 80%;
+    border: none;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
+}
+
+

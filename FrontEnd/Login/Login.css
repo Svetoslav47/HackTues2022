@@ -1,20 +1,18 @@
 body{
     margin: 0%;
-    background-image: url(../Images/loginBackground.jpg);
+    background-image: url(/Images/loginBackground.jpg);
     display: flex;
     background-repeat: no-repeat;
 }
-#img{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
+
+#loginform{
+    margin-top:10em;
+    margin-left:auto;
+    margin-right:auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15em;
 }
 
-#login {
+.login {
     margin: 10px;
     background-color: #1F1F35;
     opacity: 80%;
@@ -22,9 +20,16 @@ body{
     color: white;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 20px;
+    margin-top:1em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 500px;
+    height: 60px;
+    font-family: 'Bebas Neue', cursive;
+    font-size:30px;
+    border-radius: 10px;
 }
+
 #loginbutton {
     margin: 10px;
     background-color: #1F1F35;
@@ -32,12 +37,32 @@ body{
     border: none;
     color: white;
     display: flex;
+    font-family: 'Bebas Neue', cursive;
     flex-direction: column;
+    margin-top: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 10px;
 }
+
 #SignUp{
     text-align: center;
-    margin: 10px;
-    background-color: #1F1F35;
+    margin: 20px;
+    background-color: none;
     opacity: 80%;
     border: none;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 10px;
 }
+
+
