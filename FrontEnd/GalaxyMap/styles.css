@@ -37,3 +37,9 @@
 .disabled {
     opacity: 0;
 }
+header h1 {
+    float: left;
+    margin: 0.5em 2em;
+    opacity: 50%;
+    padding-top: 0.5em;
+}

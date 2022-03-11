@@ -113,7 +113,7 @@ section button{
   
     border-radius: 20px;
 }
-section button{
+section a{
     font-size: large;
     background:none;
     margin-top: 5%;
@@ -122,9 +122,13 @@ section button{
     width: 26em;
     height:2em;
     border-radius: 20px;
-    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
 }
-section button:hover{
+section a:hover{
     transition: background-color 0.5s ;
     background-color: #2c2c49;
 }
