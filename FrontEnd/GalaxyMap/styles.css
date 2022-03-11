@@ -1,0 +1,39 @@
+.space {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.solarContainer {
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    margin: 0px 5%;
+}
+
+.solarImage {
+    height: 200px;
+    width: 200px;
+}
+
+.solarDescription {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 100%;
+    width: 80%;
+    margin: 0px 5%;
+    transition: all 0.5s;
+}
+
+.solarContainer:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+
+.disabled {
+    opacity: 0;
+}
