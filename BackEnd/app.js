@@ -4,6 +4,7 @@ var qs = require('querystring');
 const express = require('express');
 var session = require('express-session');
 const filestore = require("session-file-store")(session);
+var flash = require('connect-flash');
 
 var app = express();
 var router = express.Router();
@@ -76,6 +77,37 @@ router.post('/page/', (req,res)=>{
 			else{
 				
 				res.end("Password is wrong");
+			}
+		});
+	});
+});
+
+router.post("/SignUp/SignUp.html?",(req,res)=>{
+	let body = [];
+	req.on('data', (dat)=>{
+		body.push(dat);
+	}).on('end', ()=>{
+		body = Buffer.concat(body).toString();
+		const{username,password,password_2} = qs.parse(body);
+
+		var Sql = "SELECT pass FROM logs WHERE name=" + mysql.escape(username);
+		res.writeHead(200, {'Content-Type': 'text/html'});
+		connect.query(Sql, function(err, result){
+			if(err||result[0]==null){
+				if(password != password_2){
+					res.write("Password doesn't mach.");
+					return res.end();
+				}
+				else{
+					var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + "," + mysql.escape(password) + ")";
+					connect.query(Sql_2);
+					res.write("Your profile is added!");
+					return res.end();
+				}
+			}
+			else{
+				res.write("There is user with that name.");
+				return res.end();
 			}
 		});
 	});
