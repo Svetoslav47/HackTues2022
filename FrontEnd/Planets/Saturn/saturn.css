@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../Images/BackGroundMars.jpg);
+    background-image: url(../../Images/BackGroundSaturn.png);
 }
 
 #zaglavie{
@@ -91,6 +91,7 @@ body{
     font-weight: bold;
     border: none;
     border-radius: 50px;
+
 }
 
 .srednozaglavie{
