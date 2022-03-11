@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Sapce colonizer</title>
-    <link rel="stylesheet" href="../cssReset.css">
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="/cssReset.css">
+    <link rel="stylesheet" href="/Login/Login.css">
 </head>
 
 <body>
 
-    <img id="img" src="..\Images\profilePicLoginAndSignUp.png" alt="">
+    <img id="img" src="/Images/profilePicLoginAndSignUp.png" alt="">
 
-    <form action="/" method="POST">
-  
-      <input type="text" id="login" placeholder="username">
-      <input type="password" id="login" placeholder="password">
+    <form action="/page/" method="POST">
+
+       
+      <input type="text" id="login" placeholder="username" name="username">
+      <input type="password" id="login" placeholder="password" name="password">
       <input type="submit" id="loginbutton" value="Login">
 
     </form>
 
-    <form action="../SignUp/SignUp.html">
+    <form action="/SignUp/SignUp.html">
         <div>
             <button id="SignUp">Don’t have an account? Create!</button>
         </div>

@@ -39,7 +39,7 @@ header nav {
     height: 100%;
 }
 body{
-    background-image: url(../Images/mainPageBackground.jpg);
+    background-image: url(/Images/mainPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
