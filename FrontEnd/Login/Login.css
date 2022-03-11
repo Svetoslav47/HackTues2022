@@ -3,14 +3,13 @@ body {
     background-image: url(../Images/loginBackground.jpg);
     display: flex;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#loginform {
-    margin-top: 10em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+
 
 .login {
     margin: 10px;
@@ -25,27 +24,25 @@ body {
     margin-right: auto;
     width: 500px;
     height: 60px;
-    font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     border-radius: 10px;
 }
-
+#loginform{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #loginbutton {
     margin: 10px;
     background-color: #1F1F35;
     opacity: 80%;
     border: none;
     color: white;
-    display: flex;
-    font-family: 'Bebas Neue', cursive;
-    flex-direction: column;
     margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
     width: 200px;
     height: 50px;
-    align-items: center;
-    justify-content: center;
     font-size: 40px;
     border-radius: 10px;
 }
@@ -56,11 +53,10 @@ body {
     background-color: none;
     opacity: 80%;
     border: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    justify-content: center;
+    align-items: ce;
+    display: flex;
     text-decoration: none;
     color: white;
-    font-family: 'Bebas Neue', cursive;
     border-radius: 10px;
 }
