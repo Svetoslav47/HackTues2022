@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SignUp to Space colonizer</title>
-    <link rel="stylesheet" href="/cssReset.css">
-    <link rel="stylesheet" href="/SignUp/SignUp.css">
+    <link rel="stylesheet" href="../cssReset.css">
+    <link rel="stylesheet" href="../SignUp/SignUp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form action="/SignUp/SignUp.html" method="POST" id="loginform">
-        <img src="\Images\profilePicLoginAndSignUp.png" alt="" style="width:200px;height:200px;border-radius: 50%;margin-left:auto;margin-right:auto; display: block;">
-        <input type="text" name="username" class="signup" placeholder="username">
-        <input type="password" name="password" class="signup" placeholder="password">
-        <input type="password" name="password_2" class="signup" placeholder="confirm password">
+    <form action="../SignUp/SignUp.html" method="POST" id="loginform">
+        <img src="..\Images\profilePicLoginAndSignUp.png" alt="" style="width:200px;height:200px;border-radius: 50%;margin-left:auto;margin-right:auto; display: block;">
+        <input type="text" name="username" class="signup" placeholder="username" required>
+        <input type="password" name="password" class="signup" placeholder="password" required>
+        <input type="password" name="password_2" class="signup" placeholder="confirm password" required>
         <!--fdgdhertcyvsudbtewarvsydjktrecwqwarysrtertwasdjybk-->
-        <a href="/Login/Login.html" id="login">Alrady have an account?</a>
+        <button id="signupbutton">SignUp</button>
+        <a href="../Login/Login.html" id="login">Already have an account?</a>
 </body>
 
 </html>

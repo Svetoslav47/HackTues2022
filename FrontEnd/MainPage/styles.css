@@ -47,7 +47,7 @@ header nav {
 }
 
 body {
-    background-image: url(/Images/mainPageBackground.jpg);
+    background-image: url(../Images/mainPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -55,11 +55,12 @@ body {
 }
 
 #title {
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: left;
-    font-size: 10em;
-    margin: 3% 20%;
+    font-size: 15em;
+    margin: 3% 7%;
     margin-top: 10%;
     color: white;
 }

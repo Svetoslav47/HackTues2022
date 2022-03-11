@@ -113,7 +113,7 @@ router.get("/SignUp/SignUp.html", (req,res)=>{
 			error_message = "<p id='error_message_2' style='color:red;'>Passwords are not the same.</p>";
 		}
 		if(Errorr.error==2){
-			error_message = "<p id='error_message_2' style='color:red;'>Your profile is added.</p>";
+			error_message = "<p id='error_message_2' style='color:green;'>Your profile is added.</p>";
 		}
 		if(Errorr.error==3){
 			error_message = "<p id='error_message_2' style='color:red;'>There is already user with that name.</p>";
