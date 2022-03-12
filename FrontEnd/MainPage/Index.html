@@ -60,7 +60,7 @@
         <div id="ChatBox">
             <div class="message">
                 <h3 class="messageUserame">Name</h3>
-                <p class="messageText">text</p>
+                <p class="messageText"></p>
             </div>
         </div>
         <form action="/chat/" method="POST">
@@ -114,7 +114,7 @@
         }
 
         function CloseChat() {
-            document.getElementById("Form").style.display = "none";
+            document.getElementById("Form").classList.toggle("hidden");
         }
 
         function postMessage() {

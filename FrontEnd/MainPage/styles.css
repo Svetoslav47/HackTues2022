@@ -224,7 +224,10 @@ section {
     opacity: 1;
 }
 
-#Form {}
+#Form {
+    display: flex;
+    flex-direction: column;
+}
 
 #CloseButton {}
 
@@ -237,3 +240,7 @@ section {
 #ChatBox {}
 
 #msg {}
+
+.hidden {
+    display: none;
+}
