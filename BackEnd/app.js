@@ -61,6 +61,37 @@ router.get('/', (req, res)=>{
 	});
 });
 
+router.get('/chat/', (req, res)=>{
+	var data;
+	var Sql = "SELECT message,username FROM messages";
+	connect.query(Sql,function(err,result){
+		if(err) throw err;
+		Object.keys(result).forEach(function(key) {
+      		var row = result[key];
+      		data += "<p id='ChatUsername'>" + row.username + "</p><br><p id='ChatMessage'>" + row.message + "</p><br>";
+    	});
+	});
+	res.writeHead(200,{'Content-Type': 'text/html'});
+	console.log(data);
+	res.write(data);
+	return res.end()
+});
+
+router.post('/chat/', (req, res)=>{
+	let data = [];
+	req.on('data' ,(chunk)=>{
+		data.push(chunk);
+	}).on('end',()=>{
+	data = Buffer.concat(data).toString();
+	const{message} = qs.parse(data);
+	var Sql = "INSERT INTO messages(id,username,message) VALUES(" + mysql.escape(req.session.id) + "," + mysql.escape(req.session.user) + "," + mysql.escape(message) + ")";
+	connect.query(Sql);
+	});
+	res.writeHead(302,{
+		location: "http://localhost:9988/chat/"
+	});
+	return res.end();
+});
 
 router.post('/page/', (req,res)=>{
 
@@ -72,6 +103,15 @@ router.post('/page/', (req,res)=>{
 		const{username,password} = qs.parse(body);
 
 		var Sql = "SELECT pass FROM logs WHERE name=" + mysql.escape(username);
+		var Sql_id = "SELECT ID FROM logs WHERE name=" + mysql.escape(username);
+
+		connect.query(Sql_id,function(err,result){
+			if(err) return;
+			else{
+				req.session.id = result[0];
+				return;
+			}
+		});
 		connect.query(Sql,function(err,result){
 			
 			if(err||result[0]==null){
