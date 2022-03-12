@@ -64,7 +64,7 @@ header h1 {
 }
 
 body {
-    background-image: url(../Images/GalaxyMapBackground.png);
+    background-image: url(/Images/GalaxyMapBackground.png);
 }
 
 h1 {

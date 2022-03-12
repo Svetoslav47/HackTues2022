@@ -8,9 +8,11 @@
     <title>Main Menu</title>
     <link rel="stylesheet" href="/cssReset.css">
     <link rel="stylesheet" href="/MainPage/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel=" preconnect " href="https://fonts.gstatic.com/ " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@800&display=swap " rel="stylesheet ">
+    <link rel="icon " href="/Images/LogoAmogusus.png ">
+    
     <script>
         function init() {
            setTimeout(loadDoc, 5000);
@@ -25,22 +27,22 @@ function loadDoc() {
       myFunction(this);
     }
   };
-  xhttp.open("GET", "http://localhost:9988/chat/", true);
+  xhttp.open("GET ", "/chat/ ", true);
   xhttp.send();
 }
 function myFunction(xhttp) {
-  document.getElementById("ChatBox").innerHTML = xhttp.responseText;
+  document.getElementById("ChatBox ").innerHTML = xhttp.responseText;
   setTimeout(loadDoc, 5000);
 }
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener("DOMContentLoaded ", loadDoc);
 </script>
 </head>
 
 <body>
-    <div id="Form" class="Chat-Popup">
-        <div id="ButtonContainer">
+    <div id="Form " class="Chat-Popup ">
+        <div id="ButtonContainer ">
             <h1>Chat</h1>
-            <button id="CloseButton" onclick="CloseChat()"><img src="/Images/red-close-icon.png" id="CloseButtonImage"></button>
+            <button id="CloseButton " onclick="CloseChat() "><img src="/Images/red-close-icon.png " id="CloseButtonImage "></button>
         </div>
             <div id="ChatBox"></div>
             <form action="/chat/" method="POST">
@@ -49,59 +51,59 @@ document.addEventListener("DOMContentLoaded", init);
             </form>
     </div>
     <header>
-        <h1 id="team">Error:Name Undefined</h1>
+        <h1 id="team ">Error:Name Undefined</h1>
         <nav>
-            <div id="headerButtons">
-                <a class="headerButton" style="width: 9em;height: 2em;text-align: center;" href="../MainPage/Index.html">FUTURE SPACE</a>
-                <a class="headerButton" href="/GalaxyMap/index.html">КАРТА</a>
-                <a class="headerButton" href="/SignUp/SignUp.html">SIGNUP</a>
-                <a class="headerButton" href="/Login/Login.html">LOGIN</a>
-                <button class="headerButton" id="chat_button" onclick="OpenChat()">Chat</button>
+            <div id="headerButtons ">
+                <a class="headerButton " style="width: 9em;height: 2em;text-align: center; " href="../MainPage/Index.html ">FUTURE SPACE</a>
+                <a class="headerButton " href="/GalaxyMap/index.html ">КАРТА</a>
+                <a class="headerButton " href="/SignUp/SignUp.html ">SIGNUP</a>
+                <a class="headerButton " href="/Login/Login.html ">LOGIN</a>
+                <button class="headerButton " id="chat_button " onclick="OpenChat() ">Chat</button>
             </div>
         </nav>
     </header>
 
-    <div id="titleContainer">
-        <h1 id="title">Future Space</h1>
+    <div id="titleContainer ">
+        <h1 id="title ">Future Space</h1>
         <p>
             Колонизацията на други планети ще реши големи проблеми на човечеството. Усвояването на космоса, част от който сме и ние, ще доведе до развитието на всички науки. Космосът е бъдещето на човечеството!
         </p>
     </div>
-    <h2 id="title2">Избери опция</h2>
+    <h2 id="title2 ">Избери опция</h2>
     <section>
-        <div class="card">
-            <img src="/Images/solarsystem.png" alt="">
+        <div class="card ">
+            <img src="../Images/solarsystem.png " alt=" ">
             <h3>Слънчева система</h3>
             <p>
                 Слънчевата система включва слънцето и всички естествени космически обекти, въртящи се около него. Включва осем планети, като на едно от тях живеем. Това е нашият дом..
             </p>
-            <a href="/SolarSystemPage/SolarSystem.html">Виж Слънчевата система</a>
+            <a href="../SolarSystemPage/SolarSystem.html ">Виж Слънчевата система</a>
         </div>
-        <div class="card">
-            <img src="/Images/milkyway.png" alt="">
+        <div class="card ">
+            <img src="../Images/milkyway.png " alt=" ">
             <h3>Млечен път</h3>
             <p>
                 В нашата галактика има много различни планетарни системи (около 3000). Всяка система се състои от звезда и минимум една планета, която е възможно да бъде пригодна за живеене.
             </p>
-            <a href="/GalaxyMap/index.html">Виж Млечния път</a>
+            <a href="../GalaxyMap/index.html ">Виж Млечния път</a>
         </div>
-        <div class="card">
-            <img src="/Images/otherplanets.png" alt="">
+        <div class="card ">
+            <img src="../Images/otherplanets.png " alt=" ">
             <h3>Българската космонавтика</h3>
             <p>
                 Българската космонавтика има интересна история. През 20 век България става една от много развитите държави в тази област. За съжаление в момента не е така, но това може да се промени.
             </p>
-            <a href="/Kosmonawtika/Kosmonawtika.html">Виж българската космонавтика</a>
+            <a href="../Kosmonawtika/Kosmonawtika.html ">Виж българската космонавтика</a>
         </div>
     </section>
 
-    <script type="text/javascript">
+    <script type="text/javascript ">
         function OpenChat() {
-            document.getElementById("Form").style.display = "block";
+            document.getElementById("Form ").style.display = "block ";
         }
 
         function CloseChat() {
-            document.getElementById("Form").style.display = "none";
+            document.getElementById("Form ").style.display = "none ";
         }
 
          function postMessage() {

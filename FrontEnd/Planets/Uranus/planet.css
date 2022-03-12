@@ -1,71 +1,70 @@
-body{
-    background-image: url(../../Images/UranBackground.jpg);
+body {
+    background-image: url(/Images/UranBackground.jpg);
 }
 
-#zaglavie{
+#zaglavie {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:5.5em;
+    margin-top: 5.5em;
     font-size: 8em;
     margin-bottom: 1em;
     font-weight: bold;
 }
 
-.vtorozaglavie{
+.vtorozaglavie {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:2em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     font-size: 3em;
     font-weight: bold;
-
 }
-.carta{
+
+.carta {
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
-    text-align: center; 
+    text-align: center;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 1.5em;
     margin-bottom: 2em;
 }
 
-.carta img{
+.carta img {
     margin: 1em;
 }
 
-.carta h4{
+.carta h4 {
     margin: 1em;
 }
 
-.carta p{
+.carta p {
     width: 70%;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.snimka{
-    width:400px;
-    height:400px;
-    margin-left:auto;
-    margin-right:auto;
+.snimka {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
-#p{
+#p {
     font-size: 1.5em;
     color: white;
     display: flex;
@@ -75,16 +74,17 @@ body{
     margin-bottom: 4em;
 }
 
-#buton{
+#buton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#buton button{
+#buton a {
+    text-decoration: none;
     text-transform: uppercase;
     background-color: white;
-    color: #D3504A;
+    color: #294A68;
     padding: 0.8em 1.8em;
     font-size: 1.5em;
     margin-bottom: 2em;
@@ -93,29 +93,67 @@ body{
     border-radius: 50px;
 }
 
-.srednozaglavie{
+.srednozaglavie {
     font-size: 2em;
 }
 
-#butonnazad{
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-#butonnazad button{
-    text-transform: uppercase;
-    background-color: white;
-    color: #000000;
-    padding: 0.4em 1.5em;
-    font-size: 1em;
-    margin-bottom: 2em;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-#buton button:hover{
-    background-color: rgba(167, 73, 73, 0.959);
+#buton a:hover {
+    background-color: #30587c;
     transition: background-color 0.5s;
     color: white;
     transition: color 1;
+}
+
+#headerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.headerButton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0.5em;
+    border: none;
+    font-weight: bold;
+    color: #747474;
+    width: 6em;
+    height: 2em;
+    border-radius: 20px;
+    opacity: 0.8;
+    flex-direction: row;
+    display: flex;
+}
+
+.headerButton:hover {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: white;
+    background-color: #2c2c49;
+    opacity: 1;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2f5579;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1d354b;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 0px solid #2d4053;
+    /* creates padding around scroll thumb */
 }

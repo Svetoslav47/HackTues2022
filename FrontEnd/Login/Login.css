@@ -9,8 +9,6 @@ body {
     justify-content: center;
 }
 
-
-
 .login {
     margin: 10px;
     background-color: #1F1F35;
@@ -27,13 +25,15 @@ body {
     font-size: 30px;
     border-radius: 10px;
 }
-#loginform{
+
+#loginform {
     margin-top: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 #loginbutton {
     margin: 10px;
     background-color: #1F1F35;
