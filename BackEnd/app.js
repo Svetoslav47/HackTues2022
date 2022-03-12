@@ -73,7 +73,7 @@ router.get('/chat/', (req, res) => {
         Object.keys(result).forEach(function(key) {
             var row = result[key];
 
-            data += "<p id='ChatUsername'>" + row.username + "</p><br><p id='ChatMessage'>" + row.message + "</p><br>";
+            data += "<div class='message'><h3 class='messageUsername'>" + row.username + "</h3><p class='messageText'>" + row.message + "</p></div>";
         });
 
         res.writeHead(200, { 'Content-Type': 'text/html' });
