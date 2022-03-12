@@ -1,5 +1,7 @@
 body {
     background-image: url(/Images/CosmonavtBg.jpg);
+    background-color: #000000;
+    background-repeat: no-repeat;
 }
 
 header {
