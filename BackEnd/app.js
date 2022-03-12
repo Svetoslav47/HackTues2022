@@ -14,7 +14,7 @@ var connect = mysql.createConnection({
 	host: "localhost",
   	user: "tues",
 	password: "tuesMysql",
-	database: "test"
+	database: "tues"
 });
 
 connect.connect(function(err){
