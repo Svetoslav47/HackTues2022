@@ -62,19 +62,21 @@ router.get('/', (req, res)=>{
 });
 
 router.get('/chat/', (req, res)=>{
-	var data;
+	var data="";
 	var Sql = "SELECT message,username FROM messages";
 	connect.query(Sql,function(err,result){
 		if(err) throw err;
 		Object.keys(result).forEach(function(key) {
       		var row = result[key];
+      		
       		data += "<p id='ChatUsername'>" + row.username + "</p><br><p id='ChatMessage'>" + row.message + "</p><br>";
     	});
+	
+		res.writeHead(200,{'Content-Type': 'text/html'});
+		
+		res.write(data);
+		return res.end();
 	});
-	res.writeHead(200,{'Content-Type': 'text/html'});
-	console.log(data);
-	res.write(data);
-	return res.end()
 });
 
 router.post('/chat/', (req, res)=>{
@@ -82,9 +84,9 @@ router.post('/chat/', (req, res)=>{
 	req.on('data' ,(chunk)=>{
 		data.push(chunk);
 	}).on('end',()=>{
-	data = Buffer.concat(data).toString();
-	const{message} = qs.parse(data);
-	var Sql = "INSERT INTO messages(id,username,message) VALUES(" + mysql.escape(req.session.id) + "," + mysql.escape(req.session.user) + "," + mysql.escape(message) + ")";
+	data = Buffer.concat(data).toString();	
+    var message = JSON.parse(data);
+	var Sql = "INSERT INTO messages(id,username,message) VALUES(" + mysql.escape(req.session.id) + "," + mysql.escape(req.session.user) + "," + mysql.escape(message['message']) + ")";
 	connect.query(Sql);
 	});
 	res.writeHead(302,{

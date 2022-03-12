@@ -12,7 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script>
-function loadDoc(url, cFunction) {
+        function init() {
+           setTimeout(loadDoc, 5000);
+            
+        }
+       
+function loadDoc() {
   var xhttp;
   xhttp=new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -27,7 +32,7 @@ function myFunction(xhttp) {
   document.getElementById("ChatBox").innerHTML = xhttp.responseText;
   setTimeout(loadDoc, 5000);
 }
-document.addEventListener("DOMContentLoaded", loadDoc);
+document.addEventListener("DOMContentLoaded", init);
 </script>
 </head>
 
@@ -40,7 +45,7 @@ document.addEventListener("DOMContentLoaded", loadDoc);
             <div id="ChatBox"></div>
             <form action="/chat/" method="POST">
                 <input type="text" name="message" id="msg" placeholder="Type text..." required>
-                <button id="SendButton">Send</button>
+                <button id="SendButton" onclick="return postMessage()" >Send</button>
             </form>
     </div>
     <header>
@@ -97,6 +102,28 @@ document.addEventListener("DOMContentLoaded", loadDoc);
 
         function CloseChat() {
             document.getElementById("Form").style.display = "none";
+        }
+
+         function postMessage() {
+            let postObj = { 
+                 
+                message: document.getElementById("msg").value
+            }
+            let post = JSON.stringify(postObj)
+            const url = "/chat/";
+            let xhr = new XMLHttpRequest();
+             
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+            xhr.send(post);
+             
+            xhr.onload = function () {
+                if(xhr.status === 201) {
+                    console.log("Post successfully created!");
+                }
+            }
+
+            return false;
         }
     </script>
 
