@@ -26,7 +26,7 @@ body {
     border-radius: 10px;
 }
 
-#loginform {
+.loginform {
     margin-top: 10em;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
     justify-content: center;
 }
 
-#loginbutton {
+.loginbutton {
     margin: 10px;
     background-color: #1F1F35;
     opacity: 80%;
@@ -47,7 +47,7 @@ body {
     border-radius: 10px;
 }
 
-#SignUp {
+.SignUp {
     text-align: center;
     margin: 20px;
     background-color: none;
