@@ -230,17 +230,25 @@ section {
     width: 20%;
 }
 
-#CloseButton {}
+#CloseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #ButtonContainer h1 {
     display: inline;
 }
 
-#CloseButtonImage {}
+#ChatBox {
+    width: 100%;
+    height: 90%;
+}
 
-#ChatBox {}
-
-#msg {}
+#msg {
+    width: 100%;
+    height: 10%;
+}
 
 .hidden {
     display: none;
