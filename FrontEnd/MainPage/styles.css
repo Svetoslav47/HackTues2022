@@ -242,6 +242,10 @@ section {
     height: 5%;
 }
 
+.ButtonContainer h1 {
+    flex: 1;
+}
+
 #ChatBox {
     width: 100%;
     height: 85%;
