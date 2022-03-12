@@ -85,6 +85,9 @@ router.post('/chat/', (req, res)=>{
 	}).on('end',()=>{
 	data = Buffer.concat(data).toString();	
     var message = JSON.parse(data);
+    if(message['message'] == ""){
+    	return false;
+    }
 	var Sql = "INSERT INTO messages(username,message) VALUES(" + mysql.escape(req.session.user) + "," + mysql.escape(message['message']) + ")";
 	connect.query(Sql);
 	});
