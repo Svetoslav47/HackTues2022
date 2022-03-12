@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    background-image: url(/Images/loginBackground.jpg);
+    background-image: url(../Images/loginBackground.jpg);
     display: flex;
     background-repeat: no-repeat;
     
