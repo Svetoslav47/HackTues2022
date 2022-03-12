@@ -98,24 +98,6 @@ body{
     font-size: 2em;
 }
 
-#butonnazad{
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-#butonnazad a{
-    text-transform: uppercase;
-    background-color: white;
-    color: #000000;
-    padding: 0.4em 1.5em;
-    font-size: 1em;
-    margin-bottom: 2em;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-}
-
 
 #buton a:hover{
         background-color: rgba(142,45,47,0.959);
@@ -123,12 +105,7 @@ body{
         color: white;
         transition: color 1; 
 }
-#butonnazad a:hover{
-    background-color: rgba(142,45,47,0.959);
-    transition: background-color 0.5s;
-    color: white;
-    transition: color 1; 
-}
+
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
@@ -140,3 +117,36 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 0px solid #2d4053;  /* creates padding around scroll thumb */
   }
+  #headerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.headerButton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0.5em;
+    border: none;
+    font-weight: bold;
+    color: #747474;
+    width: 6em;
+    height: 2em;
+    border-radius: 20px;
+    opacity: 0.8;
+    flex-direction: row;
+    display: flex;
+}
+
+.headerButton:hover {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: white;
+    background-color: #2c2c49;
+    opacity: 1;
+}

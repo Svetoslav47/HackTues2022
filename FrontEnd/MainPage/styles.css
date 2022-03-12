@@ -37,7 +37,7 @@ header {
 header h1 {
     float: left;
     margin: 0.5em 2em;
-    opacity: 50%;
+    opacity: 60%;
     padding-top: 0.5em;
 }
 
@@ -62,7 +62,17 @@ body {
     justify-content: left;
     font-size: 12em;
     font-weight: bold;
-    margin-top: 5%;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    color: white;
+}
+#title2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 20%;
     margin-bottom: 1%;
     color: white;
 }
@@ -132,6 +142,8 @@ section {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 6%;
+    margin-bottom: 10%;
 }
 
 .card {
@@ -211,3 +223,37 @@ section {
         flex-direction: row;
     }
 }
+
+#headerButtons {
+    display: flex;
+    flex-direction: row;
+}
+.headerButton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0.5em;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    width: 6em;
+    height: 2em;
+    border-radius: 20px;
+    opacity: 60%;
+    flex-direction: row;
+    display: flex;
+}
+
+.headerButton:hover {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: white;
+    background-color: #2c2c49;
+    opacity: 1;
+}
+
