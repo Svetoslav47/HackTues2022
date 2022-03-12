@@ -49,6 +49,8 @@ class Satelite {
     }
 }
 
+
+
 const satelitesData = [{
         element: document.getElementById("sateliteMercury"),
         orbit: document.getElementById("orbitMercury"),
@@ -114,3 +116,17 @@ var loopTimer = setInterval(function() {
         satelite.move();
     }
 }, 10);
+
+let sun = document.querySelector("#sun");
+
+sun.addEventListener("mouseover", () => {
+    toggleImageVisible(sun.querySelector(".bubble"));
+})
+
+sun.addEventListener("mouseout", () => {
+    toggleImageVisible(sun.querySelector(".bubble"));
+})
+
+function toggleImageVisible(element) {
+    element.classList.toggle("hidden");
+}
