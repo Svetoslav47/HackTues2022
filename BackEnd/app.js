@@ -176,7 +176,7 @@ router.post("/SignUp/SignUp.html", (req, res) => {
             if (err || result[0] == null) {
                 if (password != password_2) {
                     res.writeHead(302, {
-                        location: "http://52.0.201.73:9988//SignUp/SignUp.html/?error=1"
+                        location: "http://52.0.201.73:9988/SignUp/SignUp.html/?error=1"
                     });
                     //res.write("Password doesn't mach.");
                     res.end();
@@ -184,14 +184,14 @@ router.post("/SignUp/SignUp.html", (req, res) => {
                     var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + "," + mysql.escape(password) + ")";
                     connect.query(Sql_2);
                     res.writeHead(302, {
-                        location: "http://52.0.201.73:9988//SignUp/SignUp.html/?error=2"
+                        location: "http://52.0.201.73:9988/SignUp/SignUp.html/?error=2"
                     });
                     //res.write("Your profile is added!");
                     res.end();
                 }
             } else {
                 res.writeHead(302, {
-                    location: "http://52.0.201.73:9988//SignUp/SignUp.html/?error=3"
+                    location: "http://52.0.201.73:9988/SignUp/SignUp.html/?error=3"
                 });
                 //res.write("There is user with that name.");
                 res.end();
