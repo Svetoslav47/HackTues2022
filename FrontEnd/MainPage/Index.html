@@ -48,24 +48,24 @@
         <div id="ChatBox"></div>
         <form action="/chat/" method="POST">
             <input type="text" name="message" id="msg" placeholder="Type text..." required>
-            <button id="SendButton" onclick="return postMessage()">Send</button>
+            <button id="SendButton" onclick="postMessage()">Send</button>
         </form>
     </div>
     <header>
         <h1 id="team">Error:Name Undefined</h1>
         <nav>
-            <div id="headerButtons ">
+            <div id="headerButtons">
                 <a class="headerButton" style="width: 9em;height: 2em;text-align: center; " href="../MainPage/Index.html">FUTURE SPACE</a>
                 <a class="headerButton" href="/GalaxyMap/index.html">КАРТА</a>
                 <a class="headerButton" href="/SignUp/SignUp.html">SIGNUP</a>
                 <a class="headerButton" href="/Login/Login.html">LOGIN</a>
-                <button class="headerButton" id="chat_button" onclick="OpenChat()">Chat</button>
+                <button type="button" class="headerButton" id="chat_button" onclick="OpenChat()">Chat</button>
             </div>
         </nav>
     </header>
 
     <div id="titleContainer">
-        <h1 id="title ">Future Space</h1>
+        <h1 id="title">Future Space</h1>
         <p>
             Колонизацията на други планети ще реши големи проблеми на човечеството. Усвояването на космоса, част от който сме и ние, ще доведе до развитието на всички науки. Космосът е бъдещето на човечеството!
         </p>
@@ -73,28 +73,28 @@
     <h2 id="title2">Избери опция</h2>
     <section>
         <div class="card">
-            <img src="../Images/solarsystem.png" alt="">
+            <img src="/Images/solarsystem.png" alt="">
             <h3>Слънчева система</h3>
             <p>
                 Слънчевата система включва слънцето и всички естествени космически обекти, въртящи се около него. Включва осем планети, като на едно от тях живеем. Това е нашият дом..
             </p>
-            <a href="../SolarSystemPage/SolarSystem.html">Виж Слънчевата система</a>
+            <a href="/SolarSystemPage/SolarSystem.html">Виж Слънчевата система</a>
         </div>
         <div class="card">
-            <img src="../Images/milkyway.png" alt="">
+            <img src="/Images/milkyway.png" alt="">
             <h3>Млечен път</h3>
             <p>
                 В нашата галактика има много различни планетарни системи (около 3000). Всяка система се състои от звезда и минимум една планета, която е възможно да бъде пригодна за живеене.
             </p>
-            <a href="../GalaxyMap/index.html">Виж Млечния път</a>
+            <a href="/GalaxyMap/index.html">Виж Млечния път</a>
         </div>
         <div class="card">
-            <img src="../Images/otherplanets.png" alt="">
+            <img src="/Images/otherplanets.png" alt="">
             <h3>Българската космонавтика</h3>
             <p>
                 Българската космонавтика има интересна история. През 20 век България става една от много развитите държави в тази област. За съжаление в момента не е така, но това може да се промени.
             </p>
-            <a href="../Kosmonawtika/Kosmonawtika.html">Виж българската космонавтика</a>
+            <a href="/Kosmonawtika/Kosmonawtika.html">Виж българската космонавтика</a>
         </div>
     </section>
 
