@@ -1,0 +1,67 @@
+body {
+    width: auto;
+    max-height: fit-content;
+    background-image: url(../../Images/SystemBackground.jpg);
+    background-size: cover;
+}
+
+#space {
+    display: flex;
+    align-items: center;
+}
+
+#sun {
+    width: 80vh;
+    height: 80vh;
+    margin-left: -55vh;
+    background-color: #FC9B41;
+    border-radius: 50%;
+}
+
+#planetHolder {
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 40vh;
+}
+
+.planet {
+    background-size: cover;
+}
+
+#mercury {
+    margin-left: 55px;
+    margin-right: 35px;
+}
+
+#venus {
+    margin-right: 40px;
+}
+
+#earth {
+    margin-right: 37px;
+}
+
+#mars {
+    margin-right: 137px;
+}
+
+#jupiter {
+    margin-right: 92px;
+}
+
+#saturn {
+    margin-right: 71px;
+}
+
+#uranus {
+    margin-right: 66px;
+}
+
+#textHolder h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 7em;
+    margin-left: 2%;
+}

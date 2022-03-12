@@ -81,7 +81,7 @@ body{
     align-items: center;
 }
 
-#buton button{
+#buton a{
     text-transform: uppercase;
     background-color: white;
     color: #32316C;
@@ -91,6 +91,7 @@ body{
     font-weight: bold;
     border: none;
     border-radius: 50px;
+    text-decoration: none;
 }
 
 .srednozaglavie{
@@ -102,26 +103,39 @@ body{
     margin-top: 1em;
 }
 
-#butonnazad button{
+#butonnazad a{
     text-transform: uppercase;
     background-color: white;
-    color: #32316C;
+    color: #000000;
     padding: 0.4em 1.5em;
     font-size: 1em;
     margin-bottom: 2em;
     font-weight: bold;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
+    text-decoration: none;
 }
-#butonnazad button:hover{
-    background-color: rgb(58, 56, 116);
+#buton a:hover{
+        background-color: rgba(50,66,129,0.959);
+        transition: background-color 0.5s;
+        color: white;
+        transition: color 1; 
+}
+#butonnazad a:hover{
+    background-color: rgba(50,66,129,0.959);
     transition: background-color 0.5s;
     color: white;
-    transition: color 1;
+    transition: color 1; 
 }
-#buton button:hover{
-    background-color: rgb(58, 56, 116);
-    transition: background-color 0.5s;
-    color: white;
-    transition: color 1;
-}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #32539D;     /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #323363;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 0px solid #2d4053;  /* creates padding around scroll thumb */
+  }
