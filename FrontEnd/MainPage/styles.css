@@ -245,7 +245,7 @@ section {
 .ButtonContainer {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 15%;
 }
 
 .ButtonContainer h1 {
@@ -254,7 +254,7 @@ section {
 
 #ChatBox {
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 
 #msg {
