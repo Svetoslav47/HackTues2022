@@ -47,7 +47,7 @@ header nav {
 }
 
 body {
-    background-image: url(/Images/mainPageBackground.jpg);
+    background-image: url(../Images/mainPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1F1F35;
@@ -69,6 +69,40 @@ body {
 
 #titleContainer {
     margin-left: 7%;
+}
+
+#Form {
+    display: none;
+    background-color: white;
+    width: 15em;
+    height: 20em;
+    position: fixed;
+    top:3em;
+    left: 80em;
+    padding: 0;
+    z-index: 10;
+}
+
+#CloseButton {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+#ButtonContainer h1{
+    display: inline;
+}
+
+#CloseButtonImage {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0;
 }
 
 #choseAnOption {
