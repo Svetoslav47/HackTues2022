@@ -1,0 +1,39 @@
+body {
+    width: auto;
+    max-height: fit-content;
+    background-image: url(../../Images/SystemBackground.jpg);
+    background-size: cover;
+}
+
+#space {
+    display: flex;
+    align-items: center;
+}
+
+#sun {
+    width: 80vh;
+    height: 80vh;
+    margin-left: -60vh;
+    background-color: #f0451a;
+    border-radius: 50%;
+}
+
+#planetHolder {
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.planet {
+    background-size: cover;
+}
+
+#textHolder h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 7em;
+    margin-left: 2%;
+}

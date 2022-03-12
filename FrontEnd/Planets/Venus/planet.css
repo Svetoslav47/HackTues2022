@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../Images/BackGroundZemia.png);
+    background-image: url(../../Images/VenusBackground.jpg);
 }
 
 #zaglavie{
@@ -84,7 +84,7 @@ body{
 #buton a{
     text-transform: uppercase;
     background-color: white;
-    color: #31567C;
+    color: #773F25;
     padding: 0.8em 1.8em;
     font-size: 1.5em;
     margin-bottom: 2em;
@@ -98,27 +98,28 @@ body{
     font-size: 2em;
 }
 
-
 #buton a:hover{
-        background-color: #37618b;
-        transition: background-color 0.5s;
-        color: white;
-        transition: color 1; 
+    background-color: #8b4a2b;
+    transition: background-color 0.5s;
+    color: white;
+    transition: color 1;
 }
+
+
 
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   body::-webkit-scrollbar-track {
-    background-color: #3a6692;     /* color of the tracking area */
+    background-color: #8a4829;     /* color of the tracking area */
   }
   body::-webkit-scrollbar-thumb {
-    background-color: #274563;    /* color of the scroll thumb */
+    background-color: #63341f;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 0px solid #2d4053;  /* creates padding around scroll thumb */
   }
 
-  #headerButtons {
+#headerButtons {
     display: flex;
     flex-direction: row;
     justify-content: end;
