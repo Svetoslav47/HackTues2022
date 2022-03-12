@@ -61,6 +61,11 @@ router.get('/', (req, res) => {
 });
 
 router.get('/chat/', (req, res) => {
+	if(checkLog(req.session.user)==0){
+		res.writeHead(302,{
+			location: "http://52.0.201.73:9988/"
+		});
+	}
     var data = "";
     var Sql = "SELECT message,username FROM messages";
     connect.query(Sql, function(err, result) {
