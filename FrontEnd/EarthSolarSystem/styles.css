@@ -1,9 +1,0 @@
-#sun {
-    position: absolute;
-    top: calc(50% - 250px);
-    left: -250px;
-    width: 500px;
-    height: 500px;
-    background-color: yellow;
-    border-radius: 50%;
-}

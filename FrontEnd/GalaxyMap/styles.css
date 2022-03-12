@@ -22,13 +22,28 @@
 }
 
 .solarDescription {
+    transition: all 0.5s;
+}
+
+.solarDescription p {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
     height: 100%;
     width: 80%;
     margin: 0px 5%;
-    transition: all 0.5s;
+    color: white;
+    line-height: 1.2em;
+}
+
+.solarDescription h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 100%;
+    width: 80%;
+    margin: 0px 5%;
+    margin-bottom: 1%;
     color: white;
     line-height: 1.2em;
 }
