@@ -82,61 +82,6 @@ body {
     margin-left: 7%;
 }
 
-#Form {
-    display: none;
-    background-color: white;
-    width: 15em;
-    height: 20em;
-    position: fixed;
-    top: 3em;
-    left: 80em;
-    padding: 0;
-    z-index: 10;
-    justify-content: center;
-    align-items: center;
-}
-
-#CloseButton {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0;
-    position: relative;
-    top: 0;
-    right: 0.4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-}
-
-#ButtonContainer h1 {
-    display: inline;
-}
-
-#CloseButtonImage {
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0;
-}
-
-#ChatBox {
-    width: 14em;
-    height: 17em;
-    border: 3px;
-    border-color: rgb(255, 255, 255);
-    background-color: #636261;
-}
-
-#msg {
-    position: relative;
-    bottom: 0.2em;
-    left: 0.1em;
-    padding: 0;
-    width: 12em;
-    height: 1.5em;
-    display: flex;
-}
-
 #choseAnOption {
     color: white;
     font-size: 2.2em;
@@ -278,3 +223,17 @@ section {
     background-color: #2c2c49;
     opacity: 1;
 }
+
+#Form {}
+
+#CloseButton {}
+
+#ButtonContainer h1 {
+    display: inline;
+}
+
+#CloseButtonImage {}
+
+#ChatBox {}
+
+#msg {}
