@@ -12,4 +12,8 @@ for (const container of containers) {
         console.log("enter")
         container.querySelector(".solarDescription").classList.remove("disabled")
     })
+
+    container.addEventListener("click", () => {
+        window.location.href = `../Systems/${container.id}/index.html`
+    })
 }
