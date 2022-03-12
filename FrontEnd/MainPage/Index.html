@@ -14,7 +14,12 @@
     <link rel="icon " href="/Images/LogoAmogusus.png ">
     
     <script>
-function loadDoc(url, cFunction) {
+        function init() {
+           setTimeout(loadDoc, 5000);
+            
+        }
+       
+function loadDoc() {
   var xhttp;
   xhttp=new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -22,7 +27,7 @@ function loadDoc(url, cFunction) {
       myFunction(this);
     }
   };
-  xhttp.open("GET ", "http://localhost:9988/chat/ ", true);
+  xhttp.open("GET ", "/chat/ ", true);
   xhttp.send();
 }
 function myFunction(xhttp) {
@@ -37,12 +42,12 @@ document.addEventListener("DOMContentLoaded ", loadDoc);
     <div id="Form " class="Chat-Popup ">
         <div id="ButtonContainer ">
             <h1>Chat</h1>
-            <button id="CloseButton " onclick="CloseChat() "><img src="../Images/red-close-icon.png " id="CloseButtonImage "></button>
+            <button id="CloseButton " onclick="CloseChat() "><img src="/Images/red-close-icon.png " id="CloseButtonImage "></button>
         </div>
-            <div id="ChatBox "></div>
-            <form action="/chat/ " method="POST ">
-                <input type="text " name="message " id="msg " placeholder="Type text... " required>
-                <button id="SendButton ">Send</button>
+            <div id="ChatBox"></div>
+            <form action="/chat/" method="POST">
+                <input type="text" name="message" id="msg" placeholder="Type text..." required>
+                <button id="SendButton" onclick="return postMessage()" >Send</button>
             </form>
     </div>
     <header>
@@ -99,6 +104,28 @@ document.addEventListener("DOMContentLoaded ", loadDoc);
 
         function CloseChat() {
             document.getElementById("Form ").style.display = "none ";
+        }
+
+         function postMessage() {
+            let postObj = { 
+                 
+                message: document.getElementById("msg").value
+            }
+            let post = JSON.stringify(postObj)
+            const url = "/chat/";
+            let xhr = new XMLHttpRequest();
+             
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+            xhr.send(post);
+             
+            xhr.onload = function () {
+                if(xhr.status === 201) {
+                    console.log("Post successfully created!");
+                }
+            }
+
+            return false;
         }
     </script>
 
