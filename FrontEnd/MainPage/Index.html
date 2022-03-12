@@ -40,17 +40,7 @@
 </head>
 
 <body>
-    <div id="Form" class="Chat-Popup">
-        <div id="ButtonContainer">
-            <h1>Chat</h1>
-            <button id="CloseButton" onclick="CloseChat()"><img src="/Images/red-close-icon.png" id="CloseButtonImage"></button>
-        </div>
-        <div id="ChatBox"></div>
-        <form action="/chat/" method="POST">
-            <input type="text" name="message" id="msg" placeholder="Type text..." required>
-            <button id="SendButton">Send</button>
-        </form>
-    </div>
+
     <header>
         <h1 id="team">Error:Name Undefined</h1>
         <nav>
@@ -61,6 +51,23 @@
             </div>
         </nav>
     </header>
+
+    <div id="Form" class="Chat-Popup">
+        <div id="ButtonContainer">
+            <h1>Chat</h1>
+            <button id="CloseButton" onclick="CloseChat()"><img src="/Images/red-close-icon.png" id="CloseButtonImage"></button>
+        </div>
+        <div id="ChatBox">
+            <div class="message">
+                <h3 class="messageUserame">Name</h3>
+                <p class="messageText">text</p>
+            </div>
+        </div>
+        <form action="/chat/" method="POST">
+            <input type="text" name="message" id="msg" placeholder="Type text..." required>
+            <button id="SendButton">Send</button>
+        </form>
+    </div>
 
     <div id="titleContainer">
         <h1 id="title">Future Space</h1>
