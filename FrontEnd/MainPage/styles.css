@@ -250,6 +250,11 @@ section {
 
 .ButtonContainer h1 {
     flex: 1;
+    font-size: 2em;
+}
+
+.msgHolder {
+    display: flex;
 }
 
 #ChatBox {
@@ -258,6 +263,7 @@ section {
 }
 
 #msg {
+    flex: 1;
     width: 100%;
     height: 10%;
 }
