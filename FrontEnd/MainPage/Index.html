@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Menu</title>
     <link rel="stylesheet" href="../cssReset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../MainPage/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-     <div id="Form" class="Chat-Popup">
+    <div id="Form" class="Chat-Popup">
         <div id="ButtonContainer">
             <h1>Chat</h1>
             <button id="CloseButton" onclick="CloseChat()"><img src="../Images/red-close-icon.png" id="CloseButtonImage"></button>
         </div>
-            <div id="ChatBox"></div>
-            <form action="/chat/" method="POST">
-                <input type="text" name="message">
-                <button id="SendButton">Send</button>
-            </form>
+        <div id="ChatBox"></div>
+        <form action="/chat/" method="POST">
+            <input type="text" name="message">
+            <button id="SendButton">Send</button>
+        </form>
     </div>
     <header>
         <h1 id="team">Error:Name Undefined</h1>
@@ -32,12 +32,11 @@
                 <a class="headerButton" href="../Map/Map.html">Карта</a>
                 <a class="headerButton" href="../SignUp/SignUp.html">SignUp</a>
                 <a class="headerButton" href="../Login/Login.html">Login</a>
-                <button class="headerButton" id="chat_button" onclick="OpenChat()">Chat</button>
             </div>
 
         </nav>
     </header>
-   
+
     <div id="titleContainer">
         <h1 id="title">Future Space</h1>
         <p>
@@ -47,7 +46,6 @@
         </p>
     </div>
 
-    <h2 id="choseAnOption">Избери опция:</h2>
     <section>
         <div class="card">
             <img src="../Images/solarsystem.png" alt="">
@@ -63,7 +61,7 @@
             <p>
                 В нашата галактика има много различни планетарни системи (около 3000). Всяка система се състои от звезда и минимум една планета, която е възможно да бъде пригодна за живеене.
             </p>
-            <a href="../GalaxyMap/index.html">Виж Млечния път</a>
+            <a href="../GalaxyMap/index.html">Виж картата</a>
         </div>
         <div class="card">
             <img src="../Images/otherplanets.png" alt="">
@@ -71,15 +69,16 @@
             <p>
                 Българската космонавтика има интересна история. През 20 век България става една от много развитите държави в тази област. За съжаление в момента не е така, но това може да се промени.
             </p>
-            <a href="../Kosmonawtika/Kosmonawtika.html">Виж българската космонавтика</a>
+            <a href="../Kosmonawtika/Kosmonawtika.html">Виж повече</a>
         </div>
     </section>
 
     <script type="text/javascript">
-        function OpenChat(){
+        function OpenChat() {
             document.getElementById("Form").style.display = "block";
         }
-         function CloseChat(){
+
+        function CloseChat() {
             document.getElementById("Form").style.display = "none";
         }
     </script>
