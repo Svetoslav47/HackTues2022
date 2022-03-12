@@ -1,8 +1,8 @@
-body{
-    background-image: url(../Images/CosmonavtBg.jpg);
+body {
+    background-image: url(/Images/CosmonavtBg.jpg);
 }
 
-#zaglavie{
+#zaglavie {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,12 +13,12 @@ body{
     margin-top: 1em;
 }
 
-.glavnachast{
+.glavnachast {
     flex-direction: row;
     display: flex;
 }
 
-.kolonka{
+.kolonka {
     flex-direction: column;
     display: flex;
     margin-left: 4em;
@@ -36,8 +36,6 @@ header {
     display: flex;
     flex-direction: row;
 }
-
-
 
 .headerButton {
     text-decoration: none;
@@ -73,11 +71,12 @@ header nav {
     height: 100%;
 }
 
-.malkozaglavie{
+.malkozaglavie {
     font-size: 2em;
     margin-bottom: 1em;
 }
-.paragrafi{
+
+.paragrafi {
     color: white;
     margin-left: 16em;
     margin-top: 2em;
@@ -89,13 +88,20 @@ header nav {
 }
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);        /* color of the tracking area */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #3c163f;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #1c0e1d;  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3c163f;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #1c0e1d;
+    /* creates padding around scroll thumb */
+}

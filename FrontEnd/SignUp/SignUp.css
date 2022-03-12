@@ -1,9 +1,8 @@
 body {
     margin: 0%;
-    background-image: url(../Images/loginBackground.jpg);
+    background-image: url(/Images/loginBackground.jpg);
     display: flex;
     background-repeat: no-repeat;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +40,8 @@ body {
     opacity: 80%;
     border: none;
     color: white;
-    margin-top: 1em;display: flex;
+    margin-top: 1em;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,8 @@ body {
     margin: 20px;
     background-color: none;
     opacity: 80%;
-    border: none;display: flex;
+    border: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

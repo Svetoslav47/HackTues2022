@@ -14,6 +14,6 @@ for (const container of containers) {
     })
 
     container.addEventListener("click", () => {
-        window.location.href = `../Systems/${container.id}/index.html`
+        window.location.href = `/Systems/${container.id}/index.html`
     })
 }

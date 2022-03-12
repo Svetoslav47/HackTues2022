@@ -1,71 +1,70 @@
-body{
-    background-image: url(../../Images/UranBackground.jpg);
+body {
+    background-image: url(/Images/UranBackground.jpg);
 }
 
-#zaglavie{
+#zaglavie {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:5.5em;
+    margin-top: 5.5em;
     font-size: 8em;
     margin-bottom: 1em;
     font-weight: bold;
 }
 
-.vtorozaglavie{
+.vtorozaglavie {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:2em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     font-size: 3em;
     font-weight: bold;
-
 }
-.carta{
+
+.carta {
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
-    text-align: center; 
+    text-align: center;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 1.5em;
     margin-bottom: 2em;
 }
 
-.carta img{
+.carta img {
     margin: 1em;
 }
 
-.carta h4{
+.carta h4 {
     margin: 1em;
 }
 
-.carta p{
+.carta p {
     width: 70%;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.snimka{
-    width:400px;
-    height:400px;
-    margin-left:auto;
-    margin-right:auto;
+.snimka {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
-#p{
+#p {
     font-size: 1.5em;
     color: white;
     display: flex;
@@ -75,13 +74,13 @@ body{
     margin-bottom: 4em;
 }
 
-#buton{
+#buton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#buton a{
+#buton a {
     text-decoration: none;
     text-transform: uppercase;
     background-color: white;
@@ -94,23 +93,23 @@ body{
     border-radius: 50px;
 }
 
-.srednozaglavie{
+.srednozaglavie {
     font-size: 2em;
 }
 
-#buton a:hover{
+#buton a:hover {
     background-color: #30587c;
     transition: background-color 0.5s;
     color: white;
     transition: color 1;
 }
 
-
 #headerButtons {
     display: flex;
     flex-direction: row;
     justify-content: end;
 }
+
 .headerButton {
     text-decoration: none;
     display: flex;
@@ -140,15 +139,21 @@ body{
     opacity: 1;
 }
 
-
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background-color: #2f5579;     /* color of the tracking area */
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #1d354b;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 0px solid #2d4053;  /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2f5579;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1d354b;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 0px solid #2d4053;
+    /* creates padding around scroll thumb */
+}

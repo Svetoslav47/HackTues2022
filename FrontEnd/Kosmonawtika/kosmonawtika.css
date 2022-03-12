@@ -1,13 +1,15 @@
-body{
-    background-image: url(../Images/CosmonavtBg.jpg);
+body {
+    background-image: url(/Images/CosmonavtBg.jpg);
 }
+
 header {
     width: 100%;
     height: 2em;
     font-size: large;
     color: white;
 }
-#zaglavie{
+
+#zaglavie {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,6 +24,7 @@ header {
     display: flex;
     flex-direction: row;
 }
+
 .headerButton {
     text-decoration: none;
     display: flex;
@@ -51,19 +54,20 @@ header {
     opacity: 1;
 }
 
-
 header nav {
     float: right;
     height: 100%;
 }
-#hora{
+
+#hora {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 7em;
 }
-.chovek{
+
+.chovek {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,17 +75,20 @@ header nav {
     margin-left: 5em;
     margin-right: 5em;
 }
-.chovek h2{
+
+.chovek h2 {
     color: white;
     font-size: 3em;
     margin-top: 1em;
 }
-.chovek p{
+
+.chovek p {
     color: white;
     font-size: 1.5em;
     margin-top: 1em;
 }
-.chovek a{
+
+.chovek a {
     background-color: rgb(255, 255, 255);
     margin-top: 1em;
     text-decoration: none;
@@ -100,11 +107,13 @@ header nav {
     text-align: center;
     width: 10em;
 }
-.chovek a:hover{
+
+.chovek a:hover {
     transition: background-color 0.5s;
     background-color: #bbbbbb;
 }
-#drugozagl{
+
+#drugozagl {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -113,9 +122,9 @@ header nav {
     font-size: 5em;
     text-align: center;
     margin-top: 3em;
-
 }
-#sateliti{
+
+#sateliti {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,30 +132,35 @@ header nav {
     color: white;
     margin-top: 7em;
 }
-#sateliti div{
+
+#sateliti div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-#sateliti div h2{
+
+#sateliti div h2 {
     margin-top: 1em;
     font-size: 2em;
 }
-#sateliti div p{
+
+#sateliti div p {
     margin-top: 1.5em;
     font-size: 1.5em;
     display: flex;
     text-align: center;
     width: 80%;
 }
-#izsledwaniq{
+
+#izsledwaniq {
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-#izsledwaniq p{
+
+#izsledwaniq p {
     margin-top: 2em;
     margin-left: 3em;
     margin-right: 3em;
@@ -155,25 +169,29 @@ header nav {
     text-align: left;
     width: 25em;
 }
-#snimchica{
+
+#snimchica {
     margin-top: 15em;
     width: 100%;
 }
-#kosmzhivot{
+
+#kosmzhivot {
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-bottom: 12.5em;
 }
-#kosmzhivot img{
+
+#kosmzhivot img {
     width: 30em;
     margin-top: 5em;
     margin-left: 3em;
     margin-right: 3em;
     font-size: 1.5em;
 }
-#kosmzhivot p{
+
+#kosmzhivot p {
     width: 30em;
     margin-top: 5em;
     margin-left: 3em;

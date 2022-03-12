@@ -66,7 +66,8 @@ body {
     margin-bottom: 1%;
     color: white;
 }
-#title2{
+
+#title2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,15 +119,15 @@ body {
     padding: 0;
 }
 
-#ChatBox{
+#ChatBox {
     width: 14em;
     height: 17em;
     border: 3px;
-    border-color: rgb(255,255,255);
+    border-color: rgb(255, 255, 255);
     background-color: #636261;
 }
 
-#msg{
+#msg {
     position: relative;
     bottom: 0.2em;
     left: 0.1em;
@@ -248,6 +249,7 @@ section {
     display: flex;
     flex-direction: row;
 }
+
 .headerButton {
     text-decoration: none;
     display: flex;
@@ -276,4 +278,3 @@ section {
     background-color: #2c2c49;
     opacity: 1;
 }
-
