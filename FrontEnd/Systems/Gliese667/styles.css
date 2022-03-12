@@ -1,39 +1,155 @@
 body {
-    width: auto;
-    max-height: fit-content;
-    background-image: url(/Images/SystemBackground.jpg);
-    background-size: cover;
+    background-image: url("../../Images/Group_79.jpg");
 }
 
-#space {
-    display: flex;
-    align-items: center;
-}
-
-#sun {
-    width: 80vh;
-    height: 80vh;
-    margin-left: -60vh;
-    background-color: #f0451a;
-    border-radius: 50%;
-}
-
-#planetHolder {
-    margin: 0px 0px;
-    display: flex;
-    align-items: center;
-    width: 40%;
-    height: 40vh;
-    justify-content: space-evenly;
-}
-
-.planet {
-    background-size: cover;
-}
-
-#textHolder h1 {
-    text-transform: uppercase;
+header {
+    width: 100%;
+    height: 2em;
+    font-size: large;
     color: white;
-    font-size: 7em;
-    margin-left: 2%;
+}
+
+#headerButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerButton {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0.5em;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    width: 6em;
+    height: 2em;
+    border-radius: 20px;
+    opacity: 0.5;
+    flex-direction: row;
+    display: flex;
+}
+
+.headerButton:hover {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: white;
+    background-color: #2c2c49;
+    opacity: 1;
+}
+
+header nav {
+    float: right;
+    height: 45px;
+}
+
+.space {
+    position: relative;
+    width: 100%;
+    height: calc(80vh - 45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #df5302;
+    display: flex;
+    align-items: center;
+}
+
+.orbit {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    border: solid 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.orbitGliese667b {
+    width: 200px;
+    height: 200px;
+}
+
+.orbitGliese667c {
+    width: 400px;
+    height: 400px;
+}
+
+.satelite {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sateliteGliese667b {
+    background-image: url("../../Images/Layer_3.png");
+}
+
+.sateliteGliese667c {
+    background-image: url("../../Images/Layer_2.png");
+}
+
+.bubble {
+    margin-top: 1em;
+    margin-left: 3.5em;
+    width: 14em;
+    z-index: 10;
+}
+
+.bubbleSun {
+    margin-left: 6.3em;
+    width: 14em;
+    z-index: 10;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.text {
+    color: white;
+    margin-left: 30.5%;
+    margin-top: 1em;
+    font-size: 3.5em;
+    width: 40%;
+    opacity: 70%;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000000;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00054d;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 0px solid #2d4053;
+    /* creates padding around scroll thumb */
 }
