@@ -12,28 +12,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
     <link rel="icon " href="../Images/LogoAmogusus.png">
+    
+    <script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "http://localhost:9988/chat/", true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("ChatBox").innerHTML = xhttp.responseText;
+  setTimeout(loadDoc, 5000);
+}
+document.addEventListener("DOMContentLoaded", loadDoc);
+</script>
 </head>
 
 <body>
     <div id="Form" class="Chat-Popup">
         <div id="ButtonContainer">
             <h1>Chat</h1>
-            <button id="CloseButton" onclick="CloseChat()"><img src="../Images/red-close-icon.png" id="CloseButtonImage"></button>
+            <button id="CloseButton" onclick="CloseChat()"><img src="/Images/red-close-icon.png" id="CloseButtonImage"></button>
         </div>
-        <div id="ChatBox"></div>
-        <form action="/chat/" method="POST">
-            <input type="text" name="message">
-            <button id="SendButton">Send</button>
-        </form>
+            <div id="ChatBox"></div>
+            <form action="/chat/" method="POST">
+                <input type="text" name="message" id="msg" placeholder="Type text..." required>
+                <button id="SendButton">Send</button>
+            </form>
     </div>
     <header>
         <h1 id="team">Error:Name Undefined</h1>
         <nav>
             <div id="headerButtons">
                 <a class="headerButton" style="width: 9em;height: 2em;text-align: center;" href="../MainPage/Index.html">FUTURE SPACE</a>
-                <a class="headerButton" href="../GalaxyMap/index.html">КАРТА</a>
-                <a class="headerButton" href="../SignUp/SignUp.html">SIGNUP</a>
-                <a class="headerButton" href="../Login/Login.html">LOGIN</a>
+                <a class="headerButton" href="/GalaxyMap/index.html">КАРТА</a>
+                <a class="headerButton" href="/SignUp/SignUp.html">SIGNUP</a>
+                <a class="headerButton" href="/Login/Login.html">LOGIN</a>
+                <button class="headerButton" id="chat_button" onclick="OpenChat()">Chat</button>
             </div>
         </nav>
     </header>
@@ -47,28 +67,28 @@
     <h2 id="title2">Избери опция</h2>
     <section>
         <div class="card">
-            <img src="../Images/solarsystem.png" alt="">
+            <img src="/Images/solarsystem.png" alt="">
             <h3>Слънчева система</h3>
             <p>
                 Слънчевата система включва слънцето и всички естествени космически обекти, въртящи се около него. Включва осем планети, като на едно от тях живеем. Това е нашият дом..
             </p>
-            <a href="../Systems/SolarSystem/index.html">Виж Слънчевата система</a>
+            <a href="/SolarSystemPage/SolarSystem.html">Виж Слънчевата система</a>
         </div>
         <div class="card">
-            <img src="../Images/milkyway.png" alt="">
+            <img src="/Images/milkyway.png" alt="">
             <h3>Млечен път</h3>
             <p>
                 В нашата галактика има много различни планетарни системи (около 3000). Всяка система се състои от звезда и минимум една планета, която е възможно да бъде пригодна за живеене.
             </p>
-            <a href="../GalaxyMap/index.html">Виж картата</a>
+            <a href="/GalaxyMap/index.html">Виж Млечния път</a>
         </div>
         <div class="card">
-            <img src="../Images/otherplanets.png" alt="">
+            <img src="/Images/otherplanets.png" alt="">
             <h3>Българската космонавтика</h3>
             <p>
                 Българската космонавтика има интересна история. През 20 век България става една от много развитите държави в тази област. За съжаление в момента не е така, но това може да се промени.
             </p>
-            <a href="../Kosmonawtika/Kosmonawtika.html">Виж повече</a>
+            <a href="/Kosmonawtika/Kosmonawtika.html">Виж българската космонавтика</a>
         </div>
     </section>
 
