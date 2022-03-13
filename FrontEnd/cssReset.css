@@ -109,12 +109,15 @@ nav,
 section {
     display: block;
 }
-head{
+
+head {
     font-family: "Oswald", sans-serif;
 }
+
 body {
     line-height: 1;
     font-family: "Oswald", sans-serif;
+    background-color: black;
 }
 
 ol,
