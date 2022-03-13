@@ -61,7 +61,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/chat/', (req, res) => {
-	res.end();
+	res.writeHead(200, { 'Content-Type': 'text/html' });
 	if(checkLog(req.session.user)==0){
 		res.writeHead(302,{
 			location: "http://52.0.201.73:9988/"
@@ -76,8 +76,6 @@ router.get('/chat/', (req, res) => {
 
             data += "<div class='message'><h3 class='messageUsername'>" + row.username + "</h3><p class='messageText'>" + row.message + "</p></div>";
         });
-
-        res.writeHead(200, { 'Content-Type': 'text/html' });
 
         res.write(data);
         return res.end();
