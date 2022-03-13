@@ -61,11 +61,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/chat/', (req, res) => {
-	if(checkLog(req.session.user)==0){
-		res.writeHead(302,{
-			location: "http://52.0.201.73:9988/"
-		});
-	}
+
 	res.writeHead(200, { 'Content-Type': 'text/html' });
     var data = "";
     var Sql = "SELECT message,username FROM messages";
@@ -89,7 +85,7 @@ router.post('/chat/', (req, res)=>{
 	data = Buffer.concat(data).toString();	
     var message = JSON.parse(data);
     if(message['message'] == ""){
-    	return false;
+    	return;
     }
 	var Sql = "INSERT INTO messages(username,message) VALUES(" + mysql.escape(req.session.user) + "," + mysql.escape(message['message']) + ")";
 	connect.query(Sql);

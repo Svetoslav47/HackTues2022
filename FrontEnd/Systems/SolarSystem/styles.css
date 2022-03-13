@@ -1,7 +1,5 @@
 body {
     background-image: url("/Images/keplersystembackground.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 header {
@@ -133,36 +131,36 @@ header nav {
 }
 
 .sateliteMercury {
-    background-image: url("../Images/Mercury.png");
+    background-image: url("/Images/Mercury.png");
 }
 
 .sateliteVenus {
-    background-image: url("../Images/Venus.png");
+    background-image: url("/Images/Venus.png");
 }
 
 .sateliteEarth {
-    background-image: url("../Images/Earth.png");
+    background-image: url("/Images/Earth.png");
 }
 
 .sateliteMars {
-    background-image: url("../Images/Mars.png");
+    background-image: url("/Images/Mars.png");
 }
 
 .sateliteJupiter {
-    background-image: url("../Images/Jupiter.png");
+    background-image: url("/Images/Jupiter.png");
 }
 
 .sateliteSaturn {
-    background-image: url("../Images/Saturn.png");
+    background-image: url("/Images/Saturn.png");
     width: 100px;
 }
 
 .sateliteUranus {
-    background-image: url("../Images/Uranus.png");
+    background-image: url("/Images/Uranus.png");
 }
 
 .sateliteNeptune {
-    background-image: url("../Images/Neptune.png");
+    background-image: url("/Images/Neptune.png");
 }
 
 .bubble {
