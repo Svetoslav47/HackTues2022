@@ -276,7 +276,3 @@ section {
 .hidden {
     display: none;
 }
-
-.message{
-    z-index: 10;
-}
