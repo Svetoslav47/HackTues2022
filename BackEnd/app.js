@@ -117,7 +117,7 @@ router.post('/page/', (req,res)=>{
 			}
 			else{
 				var Sql_2 = "SELECT * FROM logs WHERE name=" + mysql.escape(username) + "AND pass=SHA1(" + mysql.escape(password) + ")";
-				connect.qery(Sql_2, function(error,dat){
+				connect.query(Sql_2, function(error,dat){
 					if(error){
 						res.writeHead(302,{
 							location: "http://52.0.201.73:9988/?error=2"
