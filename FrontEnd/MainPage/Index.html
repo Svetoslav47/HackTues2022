@@ -53,18 +53,18 @@
     </header>
 
     <div id="Form" class="Chat-Popup">
-        <div id="ButtonContainer">
+        <div class="ButtonContainer">
             <h1>Chat</h1>
-            <button id="CloseButton" onclick="CloseChat()"><img src="/Images/red-close-icon.png" id="CloseButtonImage"></button>
+            <img class="CloseButton" src="/Images/red-close-icon.png" onclick="CloseChat()" id="CloseButtonImage">
         </div>
-        <div id="ChatBox">
+        <div class="ChatBox" id="ChatBox">
             <div class="message">
                 <h3 class="messageUserame">Name</h3>
-                <p class="messageText"></p>
+                <p class="messageText">text</p>
             </div>
         </div>
-        <form action="/chat/" method="POST">
-            <input type="text" name="message" id="msg" placeholder="Type text..." required>
+        <form action="/chat/" method="POST" class="msgHolder">
+            <input type="text" name="message" class="msg" placeholder="Type text..." required>
             <button id="SendButton">Send</button>
         </form>
     </div>
