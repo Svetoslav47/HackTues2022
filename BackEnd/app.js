@@ -115,23 +115,28 @@ router.post('/page/', (req,res)=>{
 				//res.write("Error: No such user");
 				res.end();
 			}
-			else if(result[0].pass == password){
-				req.session.user = username;
-				res.writeHead(200,{'Content-Type': 'text/html'});
-				fs.readFile("../FrontEnd/MainPage/Index.html", function(err,data){
-					if(err) throw err;
-					res.write(data);
-					return res.end();
-				});
-				res.end();
-			}
 			else{
-				res.writeHead(302,{
-					location: "http://52.0.201.73:9988/?error=2"
+				var Sql_2 = "SELECT * FROM logs WHERE name=" + mysql.escape(username) + "AND pass=sh1(" + mysql.escape(password) + ")";
+				connect.qery(Sql_2, function(error,dat){
+					if(error){
+						res.writeHead(302,{
+							location: "http://52.0.201.73:9988/?error=2"
+						});
+						//res.end("Password is wrong");
+						res.end();
+					}
+					else{
+						req.session.user = username;
+						res.writeHead(200,{'Content-Type': 'text/html'});
+						fs.readFile("../FrontEnd/MainPage/Index.html", function(err,data){
+							if(err) throw err;
+							res.write(data);
+							return res.end();
+						});
+						res.end();
+					}
 				});
-				//res.end("Password is wrong");
-				res.end();
-			}
+		}
 		});
 	});
 	});
@@ -180,7 +185,7 @@ router.post("/SignUp/SignUp.html", (req, res) => {
                     //res.write("Password doesn't mach.");
                     res.end();
                 } else {
-                    var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + "," + mysql.escape(password) + ")";
+                    var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + ",sh1(" + mysql.escape(password) + "))";
                     connect.query(Sql_2);
                     res.writeHead(302, {
                         location: "http://52.0.201.73:9988/SignUp/SignUp.html/?error=2"
