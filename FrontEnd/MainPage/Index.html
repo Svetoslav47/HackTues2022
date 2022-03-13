@@ -12,31 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@800&display=swap " rel="stylesheet ">
     <link rel="icon " href="/Images/LogoAmogusus.png">
-
-    <!-- <script>
-        function init() {
-            setTimeout(loadDoc, 5000);
-
-        }
-
-        function loadDoc() {
-            var xhttp;
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    myFunction(this);
-                }
-            };
-            xhttp.open("GET", "/chat/", true);
-            xhttp.send();
-        }
-
-        function myFunction(xhttp) {
-            document.getElementById("ChatBox").innerHTML = xhttp.responseText;
-            setTimeout(loadDoc, 5000);
-        }
-        document.addEventListener("DOMContentLoaded", loadDoc);
-    </script> -->
 </head>
 
 <body>
@@ -51,23 +26,6 @@
             </div>
         </nav>
     </header>
-
-    <div class="Form" class="Chat-Popup">
-        <div class="ButtonContainer">
-            <h1>Chat</h1>
-            <img class="CloseButton" src="/Images/red-close-icon.png" onclick="CloseChat()" id="CloseButtonImage">
-        </div>
-        <div class="ChatBox" id="ChatBox">
-            <div class="message">
-                <h3 class="messageUserame">Name</h3>
-                <p class="messageText">text</p>
-            </div>
-        </div>
-        <form action="/chat/" method="POST" class="msgHolder">
-            <input type="text" name="message" class="msg" placeholder="Type text..." required>
-            <button class="SendButton" id="SendButton">Send</button>
-        </form>
-    </div>
 
     <div id="titleContainer">
         <h1 id="title">Future Space</h1>
@@ -102,43 +60,6 @@
             <a href="/Kosmonawtika/Kosmonawtika.html">Прочети повече</a>
         </div>
     </section>
-
-    <script type="text/javascript">
-        document.querySelector("#SendButton").addEventListener("click", (event) => {
-            event.preventDefault();
-            return postMessage();
-        });
-
-        function OpenChat() {
-            document.getElementById("Form").style.display = "block";
-        }
-
-        function CloseChat() {
-            document.getElementById("Form").classList.toggle("hidden");
-        }
-
-        function postMessage() {
-            let postObj = {
-
-                message: document.getElementById("msg").value
-            }
-            let post = JSON.stringify(postObj)
-            const url = "/chat/";
-            let xhr = new XMLHttpRequest();
-
-            xhr.open('POST', url, true);
-            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
-            xhr.send(post);
-
-            xhr.onload = function() {
-                if (xhr.status === 201) {
-                    console.log("Post successfully created!");
-                }
-            }
-
-            return false;
-        }
-    </script>
 
 </body>
 
