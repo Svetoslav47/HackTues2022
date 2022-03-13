@@ -75,6 +75,7 @@ router.get('/chat/', (req, res) => {
             var row = result[key];
             console.log(row.username);
             console.log(row.message);
+            console.log("test");
 
             data += "<div class='message'><h3 class='messageUsername'>" + row.username + "</h3><p class='messageText'>" + row.message + "</p></div>";
         });
