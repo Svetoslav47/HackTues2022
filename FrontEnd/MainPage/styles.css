@@ -263,6 +263,10 @@ section {
     height: 75%;
 }
 
+.sendButton {
+    height: 100%;
+}
+
 .msg {
     flex: 1;
     width: 100%;
@@ -271,4 +275,8 @@ section {
 
 .hidden {
     display: none;
+}
+
+.message{
+    z-index: 10;
 }
