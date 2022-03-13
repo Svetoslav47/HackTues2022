@@ -116,7 +116,7 @@ router.post('/page/', (req,res)=>{
 				res.end();
 			}
 			else{
-				var Sql_2 = "SELECT * FROM logs WHERE name=" + mysql.escape(username) + "AND pass=sh1(" + mysql.escape(password) + ")";
+				var Sql_2 = "SELECT * FROM logs WHERE name=" + mysql.escape(username) + "AND pass=SHA1(" + mysql.escape(password) + ")";
 				connect.qery(Sql_2, function(error,dat){
 					if(error){
 						res.writeHead(302,{
@@ -185,7 +185,7 @@ router.post("/SignUp/SignUp.html", (req, res) => {
                     //res.write("Password doesn't mach.");
                     res.end();
                 } else {
-                    var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + ",sh1(" + mysql.escape(password) + "))";
+                    var Sql_2 = "INSERT INTO logs(name,pass)	VALUES(" + mysql.escape(username) + ",SHA1(" + mysql.escape(password) + "))";
                     connect.query(Sql_2);
                     res.writeHead(302, {
                         location: "http://52.0.201.73:9988/SignUp/SignUp.html/?error=2"
