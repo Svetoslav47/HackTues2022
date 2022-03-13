@@ -73,10 +73,12 @@ router.get('/chat/', (req, res) => {
         if (err) throw err;
         Object.keys(result).forEach(function(key) {
             var row = result[key];
+            console.log(row.username);
+            console.log(row.message);
 
             data += "<div class='message'><h3 class='messageUsername'>" + row.username + "</h3><p class='messageText'>" + row.message + "</p></div>";
         });
-
+        console.log(data);
         res.write(data);
         return res.end();
     });
