@@ -57,14 +57,14 @@
             <h1>Chat</h1>
             <img class="CloseButton" src="/Images/red-close-icon.png" onclick="CloseChat()" id="CloseButtonImage">
         </div>
-        <div id="ChatBox">
+        <div class="ChatBox" id="ChatBox">
             <div class="message">
                 <h3 class="messageUserame">Name</h3>
                 <p class="messageText">text</p>
             </div>
         </div>
         <form action="/chat/" method="POST" class="msgHolder">
-            <input type="text" name="message" id="msg" placeholder="Type text..." required>
+            <input type="text" name="message" class="msg" placeholder="Type text..." required>
             <button id="SendButton">Send</button>
         </form>
     </div>

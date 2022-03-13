@@ -255,6 +255,7 @@ section {
 
 .msgHolder {
     display: flex;
+    height: 15%;
 }
 
 #ChatBox {
