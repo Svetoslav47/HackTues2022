@@ -1,15 +1,17 @@
 body {
     background-image: url(/Images/bgkosmospeople.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 html {
     scroll-behavior: smooth;
-   }
-   
-   .down {
+}
+
+.down {
     margin-top: 100%;
     padding-bottom: 25%;
-   } 
+}
 
 #zaglavie {
     width: 100%;
