@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../Images/keplersystembackground.jpg");
+    background-image: url("/Images/keplersystembackground.jpg");
 }
 
 header {
@@ -101,11 +101,11 @@ header nav {
 }
 
 .sateliteGliese667b {
-    background-image: url("../../Images/Layer_3.png");
+    background-image: url("/Images/Layer_3.png");
 }
 
 .sateliteGliese667c {
-    background-image: url("../../Images/Layer_2.png");
+    background-image: url("/Images/Layer_2.png");
 }
 
 .bubble {
