@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../Images/keplersystembackground.jpg");
+    background-image: url("/Images/keplersystembackground.jpg");
 }
 
 header {
@@ -85,7 +85,6 @@ header nav {
     height: 200px;
 }
 
-
 .satelite {
     position: absolute;
     width: 50px;
@@ -97,7 +96,7 @@ header nav {
 }
 
 .sateliteKepler442 {
-    background-image: url("../../Images/2-1.png");
+    background-image: url("/Images/2-1.png");
 }
 
 .bubble {
