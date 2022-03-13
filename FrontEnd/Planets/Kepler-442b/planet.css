@@ -1,5 +1,7 @@
 body {
     background-image: url(/Images/Kepler-442bBackGround.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #zaglavie {

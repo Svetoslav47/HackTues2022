@@ -1,5 +1,7 @@
 body {
     background-image: url(/Images/GJ667Cbbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #zaglavie {
@@ -97,14 +99,12 @@ body {
     font-size: 2em;
 }
 
-
 #buton a:hover {
     background-color: #404057;
     transition: background-color 0.5s;
     color: white;
     transition: color 1;
 }
-
 
 body::-webkit-scrollbar {
     width: 12px;

@@ -1,5 +1,7 @@
 body {
     background-image: url(/Images/UranBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #zaglavie {
