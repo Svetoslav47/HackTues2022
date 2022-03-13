@@ -1,5 +1,6 @@
 body {
-    background-image: url("../../Images/keplersystembackground.jpg");
+    background-image: url("/Images/keplersystembackground.jpg");
+    background-color: yellow;
 }
 
 header {
