@@ -97,7 +97,7 @@ header nav {
 }
 
 .sateliteKepler442 {
-    background-image: url("../../Images/Mercury.png");
+    background-image: url("../../Images/2-1.png");
 }
 
 .bubble {
@@ -119,12 +119,12 @@ header nav {
 
 .text {
     color: white;
-    margin-left: 24.5%;
-    margin-top: 1em;
+    margin-left: 30.5%;
+    margin-top: 0.5em;
     font-size: 3.5em;
     width: 40%;
     opacity: 70%;
-    text-align: right;
+    text-align: center;
 }
 
 body::-webkit-scrollbar {
