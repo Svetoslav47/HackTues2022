@@ -61,6 +61,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/chat/', (req, res) => {
+	res.end();
 	if(checkLog(req.session.user)==0){
 		res.writeHead(302,{
 			location: "http://52.0.201.73:9988/"
