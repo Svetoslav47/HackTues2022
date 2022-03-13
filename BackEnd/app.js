@@ -61,12 +61,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/chat/', (req, res) => {
-	res.writeHead(200, { 'Content-Type': 'text/html' });
 	if(checkLog(req.session.user)==0){
 		res.writeHead(302,{
 			location: "http://52.0.201.73:9988/"
 		});
 	}
+	res.writeHead(200, { 'Content-Type': 'text/html' });
     var data = "";
     var Sql = "SELECT message,username FROM messages";
     connect.query(Sql, function(err, result) {
