@@ -106,8 +106,8 @@
     <script type="text/javascript">
         document.querySelector("#SendButton").addEventListener("click", (event) => {
             event.preventDefault();
-            postMessage();
-        })
+            return postMessage();
+        });
 
         function OpenChat() {
             document.getElementById("Form").style.display = "block";
